@@ -1,9 +1,11 @@
-<%= form_for @message do |f| %>
-  <%= f.label :to %>
-  <%= f.text_field :to %>
-  <%= f.label :from %>
-  <%= f.text_field :from %>
-  <%= f.label :body %>
-  <%= f.text_field :body %>
-  <%= f.submit %>
-<% end %>
+<div class="form">
+  <%= form_for @message do |f| %>
+    <%= f.label :to %><br>
+    <%= f.text_field :to %><br>
+    <%= f.label :from %><br>
+    <%= f.text_field :from %><br>
+    <%= f.label :body %><br>
+    <%= f.text_field :body %><br><br>
+    <%= f.submit %><br>
+  <% end %>
+</div>

@@ -1,0 +1,433 @@
+
+@import "bootstrap-sprockets"
+@import "bootstrap"
+//
+//
+$color-primary-0: #8D80B7	// Main Primary color */
+$color-primary-1: #CDC7E1
+$color-primary-2: #AEA4CE
+$color-primary-3: #7060A3
+$color-primary-4: #56458E
+
+$color-secondary-1-0: #E798B0	// Main Secondary color (1) */
+$color-secondary-1-1: #F5D4DE
+$color-secondary-1-2: #EEB7C8
+$color-secondary-1-3: #D37290
+$color-secondary-1-4: #B94D6E
+
+$color-secondary-2-0: #78B79C	// Main Secondary color (2) */
+$color-secondary-2-1: #C3E1D4
+$color-secondary-2-2: #9ECDB9
+$color-secondary-2-3: #58A282
+$color-secondary-2-4: #3B8E6A
+
+
+body
+  color: #151515
+  font-size: 14px
+  font-family: 'Raleway', Arial, sans-serif
+  line-height: 1.8
+  -webkit-font-smoothing: antialiased
+  -moz-font-smoothing: greyscale
+
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Crimson Text', Georgia, serif
+  font-weight: 400
+  line-height: 1.2
+
+.tagline
+  font-weight: 500
+  font-size: 20px
+  text-align: center
+
+// div
+//   display: block
+
+.heading
+  margin: 40px
+  padding: 40px
+
+.tagline
+  width: 100%
+  position: absolute
+  left: 0
+
+.accent
+  font-family: 'Crimson Text', Georgia, serif
+  color: #777
+  font-size: 16px
+  font-style: italic
+  padding: -5px
+  margin: -5px
+
+.accent-medium
+  font-family: 'Raleway', Arial, sans-serif
+  color: #777
+
+.accent-strong
+  font-family: 'Raleway', Arial, sans-serif
+  text-transform: uppercase
+  font-weight: 500
+  padding: 0
+
+.author
+  width: 100%
+  font-family: 'Raleway', Arial, sans-serif
+  position: absolute
+  left: 0
+  top: 5%
+  font-weight: 600
+  font-size: 22px
+  text-transform: uppercase
+  text-align: center
+  letter-spacing: 10px
+
+.nav
+  font-family: 'Raleway', Arial, sans-serif
+  font-weight: 400
+  font-size: 16px
+  text-transform: uppercase
+  letter-spacing: 1px
+  float: none
+  display: inline-block
+  vertical-align: top
+
+.navbar .navbar-collapse
+  text-align: center
+  background-color: #fff
+
+  li
+    text-align: center
+    align: center
+    font-size: 12px
+
+.collapse
+  background-color: #fff
+
+.footer
+  color: #777
+  background: #151515
+  margin-bottom: -20px
+  padding-bottom: 0
+  margin-top: 120px
+  padding: 15px
+  .sub-footer
+    margin: 0 5.5%
+    padding: 20px 0
+
+.post_wrapper
+  text-align: center
+  a
+    text-decoration: none
+    color: $color-secondary-2-3
+  a:hover
+    color: #000
+
+.blog_list
+  padding-left: 200px
+  padding-right: 200px
+
+// a
+//   text-decoration: none
+//   color: inherit
+//
+// #sidebar
+//   width: 250px
+//   position: fixed
+//   left: 0
+//   top: 0
+//   height: 100%
+//   background: #f5f7f9
+//   padding: 7em 0 0 0
+//   border-right: 1px solid #d6dce0
+//
+//   #logo
+//     width: 40px
+//     position: absolute
+//     right: 3em
+//     top: 3em
+//
+//   ul
+//     list-style: none
+//     text-alight: right
+//     padding-right: 3em
+//     .category
+//       font-weight: 700
+//       font-size: 0.7em
+//       text-transform: uppercase
+//       color: #33acb7
+//
+//     li
+//       padding: .5em 0
+//       a
+//         color: #9eafba
+//         text-transform: none
+//         transition: all .4s ease
+//         &:hover
+//           color: #33acb7
+//
+//     .active
+//       a
+//         color: #33acb7
+//
+//   .sign_in
+//     position: absolute
+//     right: 3em
+//     top: 80%
+//     font-size: .8em
+//     color: #9eafba
+//
+//   .button
+//     outline: none
+//     background: transparent
+//     border: 1px solid #d6dce0
+//     padding: .5em 1.5em
+//     border-radius: 1.5em
+//     &:hover
+//       border: 1px solid #33acb7
+//       color: #33acb7 !important
+//
+//   .clearfix:after
+//     content: '.'
+//     visibility: hidden
+//     display: block
+//     height: 0
+//     clear: both
+//
+//   #main_content
+//     margin-left: 250px
+//     #header
+//       padding: 1em 3em
+//       border-bottom: 1px solid #d6dce0
+//       background: #f5f7f9
+//       color: #9eafba
+//       p
+//         display: inline
+//       a
+//         color: #9eafba
+//         text-decoration: none
+//       .buttons
+//         float: right
+//         margin-top: -6px
+//         .button
+//           font-size: .8em
+//           margin-left: .5em
+//
+//     .post_wrapper
+//       padding: 3em
+//       border-bottom: 1px solid #d6dce0
+//       .title
+//         margin: 0
+//         a
+//           font-weight: 500
+//           text-decoration: none
+//           color: #2a2f35
+//           font-size: 1.5em
+//           &:hover
+//             color: #33acb7
+//
+//         .date_and_author
+//           color: #9eafba
+//           margin: .5em 0 0 0
+//     #post_content
+//       padding: 1em 3em
+//       .title
+//         font-weight: 500
+//         text-decoration: none
+//         color: #2a2f35
+//         font-size: 2.5em
+//         margin-bottom: 0
+//       .body
+//         font-size: 1.1em
+//         line-height: 1.75
+//
+//       .date_and_author
+//         color: #9eafba
+//         margin: .5em 0 2em 0
+//
+//
+//
+//
+//
+//       .date_and_author
+//       color: #9eafba
+//       margin: .5em 0 2em 0
+//
+//       #comments
+//       h2
+//         margin: 3em 0 1em 0
+//         border-bottom: 1px solid #d6dce0
+//         padding-bottom: 0.5em
+//
+//       h3
+//         margin-top: 2em
+//
+//       .comment
+//         border-bottom: 1px solid #d6dce0
+//         padding: 1.5em 2em
+//         .clear_both
+//           clear: both
+//
+//         &:after
+//           clear: both
+//
+//         .comment_content
+//           float: left
+//         .comment_name
+//           margin: 1em 0 0 0
+//           font-size: 0.7em
+//           text-transform: uppercase
+//
+//           .comment_body
+//             font-size: 1.2em
+//             margin: 0.2em 0 0 0
+//
+//           .comment_time
+//             margin-top: 1.2em
+//             font-size: .8em
+//
+//
+//           .button
+//             float: right
+//
+//
+//   input[type="text"], textarea
+//     width: 50%
+//
+//
+//
+//   #page_wrapper
+//     padding: 3em
+//     #profile_image
+//       width: 300px
+//       float: left
+//       margin-right: 2em
+//       img
+//         width: 100%
+//         border-radius: 0.35em
+//
+//
+//     #content
+//       h1
+//         font-weight: 500
+//
+//       p
+//         font-size: 1.1em
+//         line-height: 1.75
+//
+//       a
+//         color: #33acb7
+//         font-weight: 700
+//         text-decoration: none
+//
+//
+//
+//   .links
+//     margin: 2em 0
+//
+//   input[type="text"], input[type="email"], input[type="password"], textarea
+//     width: 90%
+//     border: 1px solid #d6dce0
+//     border-radius: .35em
+//     margin-top: 10px
+//     padding: .5em 1em
+//     line-height: 1.75
+//
+//   input[type="text"]
+//     height: 35px
+//
+//   textarea
+//     min-height: 180px
+//
+//   input[type="submit"]
+//     outline: none
+//     background: transparent
+//     border: 1px solid #d6dce0
+//     padding: .5em 1.5em
+//     font-size: 1.1em
+//     border-radius: 1.5em
+//     margin-left: .5em
+//     &:hover
+//       border: 1px solid #33acb7
+//       color: #33acb7
+//
+//
+//
+//
+
+
+
+
+// .container
+//   margin-left: 5%
+//   margin-right: 5%
+//   margin-bottom: 5%
+//
+// .jumbotron
+//   margin-bottom: -20px
+
+.languages
+
+
+  li
+    padding: 3px
+    color: $color-primary-0
+
+  a
+    color: $color-primary-3
+
+
+  a:hover
+    color: $color-secondary-2-0
+
+.picture
+  max-width: 100%
+  border-radius: 100%
+  // margin-left: auto
+  // margin-right: auto
+  // display: block
+
+h2
+  margin-bottom: 25px
+  margin-left: auto
+  margin-right: auto
+  display: block
+  text-align: center
+  &:hover
+    text-decoration: none
+
+hr
+  border-color: #e7e7e7
+
+.nav
+
+  li
+    font-size: 15px
+
+  li:hover
+    background-color: $color-secondary-2-1
+
+.btn-info
+  background-color: $color-secondary-2-0
+  border: $color-secondary-2-0
+
+.btn-info:hover
+  background-color: $color-secondary-2-3
+  border: $color-secondary-2-3
+
+.btn-danger
+  background-color: $color-secondary-1-0
+  border: $color-secondary-1-0
+
+.btn-danger:hover
+  background-color: $color-secondary-1-3
+  border: $color-secondary-1-3
+
+.btn-warning
+  background-color: $color-primary-0
+  border: $color-primary-0
+
+.btn-warning:hover
+  background-color: $color-primary-3
+  border: $color-primary-3
